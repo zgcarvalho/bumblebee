@@ -30,12 +30,12 @@ defmodule Bumblebee.Text.EsmTokenizer do
   @impl true
   def special_tokens(_tokenizer) do
     %{
-      bos: "<s>",
-      eos: "</s>",
+      # bos: "<bos>",
+      eos: "<eos>",
       unk: "<unk>",
-      sep: "</s>",
+      # sep: "</s>", <null_1>
       pad: "<pad>",
-      cls: "<s>",
+      cls: "<cls>",
       mask: "<mask>"
     }
   end
